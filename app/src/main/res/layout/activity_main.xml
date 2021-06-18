@@ -24,7 +24,7 @@
         <Button
             android:layout_marginTop="20dp"
             android:id="@+id/btnChess"
-            android:text="TEST PANGRAM"
+            android:text="CHESS ACTIVITY"
             android:textColor="@color/white"
             android:background="@color/teal_700"
             android:layout_width="match_parent"

@@ -12,7 +12,7 @@ public class PangramActivity extends AppCompatActivity {
 
     EditText edtPangramTest;
     TextView tvPangramResults;
-    Button btnSubmit;
+    Button btnSubmit, btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,14 @@ public class PangramActivity extends AppCompatActivity {
                 String sentence = edtPangramTest.getText().toString();
                 String pangramResults = getPangramMissingAlpha(sentence);
                 tvPangramResults.setText(pangramResults);
+            }
+        });
+
+        btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
